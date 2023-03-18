@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="shortcut icon" href="img/calculadora.png" type="image/png">
+    <link rel="stylesheet" href="index.css">
+    <link href="https: //fonts.googleapis.com/css2?family= Rubik +Iso & display=swap" rel="stylesheet">
+<head>
+
+<body>
+
+    <!-- ESSE É O CABEÇALHO DA PÁGINA -->
+    <header class="cabecalho">
+        
+    <h1 class="titulo">CALCULATOR</h1>
+    
+    </header>
+
+    <!-- ESSE É O CONTEÚDO PRINCIPAL DA PÁGINA -->
+    <main class="all">
+      
+        <div class="tudo">
+            <!-- esta seção contém a entrada de dados -->
+            <section class="entrada">
+
+                <!-- O REQUIRED TORNA O CAMPO COMO OBRIGATORIEDADE DE PREENCHIMENTO -->
+                <input class="entrada-numero" type="number" id="numero" required>
+
+                <input class="entrada-numero" type="number" id="numero1" required>
+
+               
+            </section>
+
+                <!-- ESTA SEÇÃO CONTEM OS BOTOES DE OPERAÇÕES -->
+            <section class="operators">
+
+                <button class="butoes" onclick="somar()" id="somar">+</button>
+
+                <button class="butoes" onclick="subtrair()" id="subtrair">-</button>
+
+                <button class="butoes" onclick="multiplicar()" id="multiplicar">*</button>
+
+                <button class="butoes" onclick="dividir()" id="dividir">/</button>
+
+            </section>
+
+            <div class="resultado">
+
+                 <!-- O READONLY PERMITE SÓ A VISUALIZAÇÃO PELO USUÁRIO -->
+                 <input class="final" type="number" id="resultado" readonly>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="rodape">
+
+        <div class="nome">
+            <p>Desenvolvido por Flavio Filho</p>
+        </div>
+
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
